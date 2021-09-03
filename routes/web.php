@@ -14,8 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        'links' => [
+        'laravel',
+        'symfony']
+    ];
+    return view('home', $data);
 })->name('homepage');
+
+// Route::get('/', function () {
+//     return view('home');
+// })->name('homepage');
 
 Route::get('/laravel', function () {
     return view('laravel');
@@ -27,7 +36,7 @@ Route::get('/symfony', function () {
 
 Route::get('/codeigniter', function () {
     return view('codeigniter');
-})->name('codeIgniter');
+})->name('codeigniter');
 
 Route::get('/cakephp', function () {
     return view('cakephp');
