@@ -21,17 +21,8 @@
                     <div class="container-fluid">
 
                         @foreach($links as $link)
-                            <a class="navbar-brand text-uppercase" href="{{ route($link) }}"> {{ $link }} </a>
+                            <a class="navbar-brand h6 text-uppercase" href="{{ route($link) }}"> {{ $link }} </a>
                         @endforeach
-
-                        <!-- <a class="navbar-brand text-uppercase" href="{{route('laravel')}}">Laravel</a>
-                        <a class="navbar-brand text-uppercase" href="{{route('symfony')}}">Symfony</a>
-                        <a class="navbar-brand text-uppercase" href="{{route('codeIgniter')}}">CodeIgniter</a>
-                        <a class="navbar-brand text-uppercase" href="{{route('cakePHP')}}">CakePHP</a>
-                        <a class="navbar-brand text-uppercase" href="{{route('zend-framework')}}">Zend Framework</a>
-                        <a class="navbar-brand text-uppercase" href="{{route('yii-framework')}}">Yii Framework</a>
-                        <a class="navbar-brand text-uppercase" href="{{route('aura')}}">Aura</a>
-                        <a class="navbar-brand text-uppercase" href="{{route('phalcon-framework')}}">Phalcon Framework</a> -->
 
                     </div>
                 </nav>
@@ -43,13 +34,13 @@
                 <h1>This is my first page with Laravel</h1>
 
                 <div>
-                    <!-- <p>There are many php frameworks:</p>
+                    <p>There are many php frameworks:</p>
                     <ul>
-                        @foreach ($frameworks as $framework)
-                            <li>{{ $framework }}</li>
+                        @foreach ($links as $link)
+                            <li>{{ $link }}</li>
                         @endforeach
                     </ul>
-                    <p>But Laravel is the best.</p> -->
+                    <p>But Laravel is the best.</p>
                 </div>
             </div>    
         </main>

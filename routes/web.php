@@ -16,8 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $data = [
         'links' => [
-        'laravel',
-        'symfony']
+            'laravel',
+            'symfony',
+            'aura',
+            'cakephp',
+            'codeigniter',
+            'phalcon-framework',
+            'yii-framework',
+        ]
     ];
     return view('home', $data);
 })->name('homepage');
@@ -34,26 +40,22 @@ Route::get('/symfony', function () {
     return view('symfony');
 })->name('symfony');
 
-Route::get('/codeigniter', function () {
-    return view('codeigniter');
-})->name('codeigniter');
-
-Route::get('/cakephp', function () {
-    return view('cakephp');
-})->name('cakePHP');
-
-Route::get('/zend-framework', function () {
-    return view('zend-framework');
-})->name('zend-framework');
-
-Route::get('/yii-framework', function () {
-    return view('yii-framework');
-})->name('yii-framework');
-
 Route::get('/aura', function () {
     return view('aura');
 })->name('aura');
 
+Route::get('/cakephp', function () {
+    return view('cakephp');
+})->name('cakephp');
+
+Route::get('/codeigniter', function () {
+    return view('codeigniter');
+})->name('codeigniter');
+
 Route::get('/phalcon-framework', function () {
     return view('phalcon-framework');
 })->name('phalcon-framework');
+
+Route::get('/yii-framework', function () {
+    return view('yii-framework');
+})->name('yii-framework');
