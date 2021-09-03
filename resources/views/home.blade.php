@@ -1,3 +1,18 @@
+<?php
+
+    $frameworks = [
+        'Laravel',
+        'Symfony',
+        'CodeIgniter',
+        'CakePHP',
+        'Zend Framework',
+        'Yii Framework',
+        'Aura',
+        'Phalcon Framework'
+    ];
+
+?>
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -13,6 +28,16 @@
         
     </head>
     <body>
-        <h1>Hello World! This is my first page with Laravel :)</h1>
+        <h1>This is my first page with Laravel</h1>
+
+        <div>
+            <p>There are many php frameworks:</p>
+            <ul>
+                @foreach ($frameworks as $framework)
+                    <li>{{ $framework }}</li>
+                @endforeach
+            </ul>
+            <p>But Laravel is the best.</p>
+        </div>
     </body>
 </html>
