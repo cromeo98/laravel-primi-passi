@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('home');
 })->name('homepage');
 
-Route::get('/about', function () {
-    return view('about');
-})->name('chi-siamo');
+Route::get('/laravel', function () {
+    return view('laravel');
+})->name('laravel');

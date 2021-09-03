@@ -24,20 +24,38 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <!-- Styles -->
+        <!-- link to bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         
     </head>
     <body>
-        <h1>This is my first page with Laravel</h1>
 
-        <div>
-            <p>There are many php frameworks:</p>
-            <ul>
-                @foreach ($frameworks as $framework)
-                    <li>{{ $framework }}</li>
-                @endforeach
-            </ul>
-            <p>But Laravel is the best.</p>
-        </div>
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid">
+                        @foreach ($frameworks as $framework)
+                            <a class="navbar-brand" href="{{route('laravel')}}">{{$framework}}</a>
+                        @endforeach
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <h1>This is my first page with Laravel</h1>
+
+                <div>
+                    <p>There are many php frameworks:</p>
+                    <ul>
+                        @foreach ($frameworks as $framework)
+                            <li>{{ $framework }}</li>
+                        @endforeach
+                    </ul>
+                    <p>But Laravel is the best.</p>
+                </div>
+            </div>    
+        </main>
     </body>
 </html>

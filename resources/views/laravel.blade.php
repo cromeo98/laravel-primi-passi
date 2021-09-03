@@ -8,13 +8,13 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
         
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            <p>Siamo boolean</p>
+        <div>
+            <h1>Siamo Laravel</h1>
+
+            <p>Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.</p>
         </div>
     </body>
 </html>
