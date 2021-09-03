@@ -20,3 +20,31 @@ Route::get('/', function () {
 Route::get('/laravel', function () {
     return view('laravel');
 })->name('laravel');
+
+Route::get('/symfony', function () {
+    return view('symfony');
+})->name('symfony');
+
+Route::get('/codeigniter', function () {
+    return view('codeigniter');
+})->name('codeIgniter');
+
+Route::get('/cakephp', function () {
+    return view('cakephp');
+})->name('cakePHP');
+
+Route::get('/zend-framework', function () {
+    return view('zend-framework');
+})->name('zend-framework');
+
+Route::get('/yii-framework', function () {
+    return view('yii-framework');
+})->name('yii-framework');
+
+Route::get('/aura', function () {
+    return view('aura');
+})->name('aura');
+
+Route::get('/phalcon-framework', function () {
+    return view('phalcon-framework');
+})->name('phalcon-framework');

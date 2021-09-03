@@ -34,9 +34,16 @@
             <div class="container">
                 <nav class="navbar navbar-light bg-light">
                     <div class="container-fluid">
-                        @foreach ($frameworks as $framework)
-                            <a class="navbar-brand" href="{{route('laravel')}}">{{$framework}}</a>
-                        @endforeach
+
+                        <a class="navbar-brand" href="{{route('laravel')}}">Laravel</a>
+                        <a class="navbar-brand" href="{{route('symfony')}}">Symfony</a>
+                        <a class="navbar-brand" href="{{route('codeIgniter')}}">CodeIgniter</a>
+                        <a class="navbar-brand" href="{{route('cakePHP')}}">CakePHP</a>
+                        <a class="navbar-brand" href="{{route('zend-framework')}}">Zend Framework</a>
+                        <a class="navbar-brand" href="{{route('yii-framework')}}">Yii Framework</a>
+                        <a class="navbar-brand" href="{{route('aura')}}">Aura</a>
+                        <a class="navbar-brand" href="{{route('phalcon-framework')}}">Phalcon Framework</a>
+
                     </div>
                 </nav>
             </div>
